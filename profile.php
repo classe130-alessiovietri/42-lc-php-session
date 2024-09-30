@@ -30,30 +30,24 @@
         </header>
 
         <main>
-            <?php
-                if (isset($_SESSION['user'])) {
-            ?>
-                <h2>
-                    <?php echo $_SESSION['user']['username']; ?>
-                </h2>
+            <h2>
+                <?php echo $_SESSION['user']['username']; ?>
+            </h2>
 
-                <ul>
-                    <li>
-                        ID: <?php echo $_SESSION['user']['id']; ?>
-                    </li>
-                    <li>
-                        Email: <?php echo $_SESSION['user']['email']; ?>
-                    </li>
-                </ul>
+            <ul>
+                <li>
+                    ID: <?php echo $_SESSION['user']['id']; ?>
+                </li>
+                <li>
+                    Email: <?php echo $_SESSION['user']['email']; ?>
+                </li>
+            </ul>
 
-                <div>
-                    <a href="./logout.php">
-                        Esci
-                    </a>
-                </div>
-            <?php
-                }
-            ?>
+            <div>
+                <a href="./logout.php">
+                    Esci
+                </a>
+            </div>
         </main>
         
     </body>
